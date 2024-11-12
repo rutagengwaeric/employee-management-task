@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Department</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <h3>Dashboard</h3>
+            <ul>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Add New Department</h2>
+            <form action="add_department.php" method="POST">
+                <label for="dept_name">Department Name:</label>
+                <input type="text" id="dept_name" name="dept_name" required>
+                <button type="submit" class="btn">Add Department</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

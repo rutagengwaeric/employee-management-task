@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management - Employee List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <h3>Dashboard</h3>
+            <ul>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Employee List</h2>
+            <a href="add_employee.html" class="btn">Add New Employee</a>
+            <br>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic PHP content will go here -->
+                    <tr>
+                        <td>1</td>
+                        <td>John Smith</td>
+                        <td>Developer</td>
+                        <td>IT</td>
+                        <td>
+                            
+                            <a href="edit_employee.html?id=1" class="btn">Edit</a>
+                            <a href="delete_employee.php?id=1" class="btn">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

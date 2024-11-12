@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <h3>Dashboard</h3>
+            <ul>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Add New Employee</h2>
+            <form action="add_employee.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="position">Position:</label>
+                <input type="text" id="position" name="position" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="hire_date">Hire Date:</label>
+                <input type="date" id="hire_date" name="hire_date" required>
+
+                <button type="submit" class="btn">Add Employee</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

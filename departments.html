@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <h3>Dashboard</h3>
+            <ul>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Department List</h2>
+            <a href="add_department.html" class="btn">Add New Department</a>
+            <br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Department Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic PHP content will go here -->
+                    <tr>
+                        <td>1</td>
+                        <td>Human Resources</td>
+                        <td>
+                            <a href="edit_department.html?id=1" class="btn">Edit</a>
+                            <a href="delete_department.php?id=1" class="btn">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
